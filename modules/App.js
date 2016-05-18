@@ -1,9 +1,14 @@
 import React from 'react'
+import Article from './Article'
+
 
 export default React.createClass({
   render() {
     return (
-      <h1>Hello!</h1>
+      <div>
+        <Article/>
+
+      </div>
     )
   }
 })
