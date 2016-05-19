@@ -108,6 +108,11 @@ body {
   display: inline-block;
   margin: 0 20px 0 0; }
 
+.like__article--clicked {
+  color: #3b5998;
+  display: inline-block;
+  margin: 0 20px 0 0; }
+
 .comment__article {
   color: gray;
   display: inline-block;

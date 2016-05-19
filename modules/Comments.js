@@ -30,11 +30,10 @@ export default React.createClass({
 
 
   render() {
-    console.log(this.props)
     return (
           <div>
             {this.props.comments.map(function(comment, i) {
-             return <Comment key={i} author_name={comment.author_name} text={comment.text} author_img={comment.author_img}/>;
+             return <Comment key={i} author_name={comment.author_name} text={comment.text} author_img={comment.author_img} date={comment.date}/>;
             })}
            </div>
     )

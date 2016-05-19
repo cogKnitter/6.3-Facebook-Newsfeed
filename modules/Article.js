@@ -1,5 +1,6 @@
 import React from 'react'
 import Comments from './Comments'
+import Actions from './Actions'
 
 
 export default React.createClass({
@@ -29,8 +30,7 @@ export default React.createClass({
           </div>
         </article>
         <div className="article__actions">
-          <h2 className="like__article"> Like</h2>
-          <h2 className="comment__article"> Comment</h2>
+          <Actions/>
         </div>
         <div>
           <Comments/>
