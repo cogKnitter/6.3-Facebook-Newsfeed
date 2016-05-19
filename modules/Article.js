@@ -1,4 +1,6 @@
 import React from 'react'
+import Comments from './Comments'
+
 
 export default React.createClass({
   getDefaultProps(){
@@ -12,7 +14,8 @@ export default React.createClass({
 
   render() {
     return (
-        <article class="main__article">
+      <main>
+        <article className="main__article">
           <div className="op__detail--wrapper">
            <img className="op__avatar" src="../images/sassy.jpg"/>
              <h2 className="op__name">{this.props.author_name}</h2>
@@ -24,6 +27,14 @@ export default React.createClass({
             </p>
           </div>
         </article>
+        <div className="article__actions">
+          <h2 className="like__article"> Like</h2>
+          <h2 className="comment__article"> Comment</h2>
+        </div>
+        <div>
+          <Comment/>
+        </div>
+      </main>
     )
   }
 })

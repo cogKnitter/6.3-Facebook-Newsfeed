@@ -96,6 +96,21 @@ body {
 
 .op__text--wrapper {
   padding: 10px;
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.article__actions {
+  border-top: 1px solid gray;
+  padding: 10px; }
+
+.like__article {
+  color: gray;
+  display: inline-block;
+  margin: 0 20px 0 0; }
+
+.comment__article {
+  color: gray;
+  display: inline-block;
+  margin: 0 20px 0 0; }
 
 /*# sourceMappingURL=main.css.map */

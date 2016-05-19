@@ -1,4 +1,5 @@
 import React from 'react'
+import Article from './Article'
 
 export default React.createClass({
   getDefaultProps() {
@@ -24,17 +25,14 @@ export default React.createClass({
         }
       ]
     }
-
   },
   render() {
     return (
-        <article class="">
           <div>
-          {this.props.comments.map(function(comment, i){
-           return <Comment key={i} author_name={comment.author_name} text={comment.text}/>
-         })}
-         </div>
-        </article>
+            {this.props.comments.map(function(comment, i) {
+             return <Comment key={i} author_name={comment.author_name} text={comment.text}/>;
+            })}
+           </div>
     )
   }
 })
