@@ -1,5 +1,6 @@
 import React from 'react'
 import Article from './Article'
+import Comment from './Comment'
 
 export default React.createClass({
   getDefaultProps() {
@@ -26,6 +27,8 @@ export default React.createClass({
       ]
     }
   },
+
+  
   render() {
     return (
           <div>

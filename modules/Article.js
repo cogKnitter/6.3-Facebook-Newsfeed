@@ -1,8 +1,9 @@
 import React from 'react'
-import Comments from './Comments'
+import Comment from './Comment'
 
 
 export default React.createClass({
+
   getDefaultProps(){
     return{
       author_name: "Sasquatch",
