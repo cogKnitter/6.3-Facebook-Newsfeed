@@ -1,16 +1,23 @@
 import React from 'react'
-import Article from './Article'
-import Comments from './Comments'
+
 
 
 export default React.createClass({
   render() {
-    console.log(...this.props.comment.text)
+    console.log(this.props)
     return (
-      <div>
-
-
-      </div>
+      <article className="main__article">
+        <div className="op__detail--wrapper">
+         <img className="op__avatar" src={this.props.author_img}/>
+           <h2 className="op__name">{this.props.author_name}</h2>
+           <h3 className="op__date">{this.props.date}</h3>
+        </div>
+        <div className="op__text--wrapper">
+          <p className="op__text">
+            {this.props.text}
+          </p>
+        </div>
+      </article>
     )
   }
 });

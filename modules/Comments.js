@@ -15,25 +15,26 @@ export default React.createClass({
         {
           author_name: "Owl",
           author_img: "../images/owl.jpg",
-          text: "",
+          text: "Whoooo",
           date: "45 minutes ago"
         },
         {
           author_name:"Creepy Gnome",
           author_img: "../images/gnome.jpg",
-          text:"",
+          text:"Huh?",
           date: "30 minutes ago"
         }
       ]
     }
   },
 
-  
+
   render() {
+    console.log(this.props)
     return (
           <div>
             {this.props.comments.map(function(comment, i) {
-             return <Comment key={i} author_name={comment.author_name} text={comment.text}/>;
+             return <Comment key={i} author_name={comment.author_name} text={comment.text} author_img={comment.author_img}/>;
             })}
            </div>
     )

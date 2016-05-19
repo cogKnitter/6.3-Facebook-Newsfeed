@@ -1,5 +1,5 @@
 import React from 'react'
-import Comment from './Comment'
+import Comments from './Comments'
 
 
 export default React.createClass({
@@ -18,7 +18,7 @@ export default React.createClass({
       <main>
         <article className="main__article">
           <div className="op__detail--wrapper">
-           <img className="op__avatar" src="../images/sassy.jpg"/>
+           <img className="op__avatar" src={this.props.author_img}/>
              <h2 className="op__name">{this.props.author_name}</h2>
              <h3 className="op__date">{this.props.date}</h3>
           </div>
@@ -33,7 +33,7 @@ export default React.createClass({
           <h2 className="comment__article"> Comment</h2>
         </div>
         <div>
-          <Comment/>
+          <Comments/>
         </div>
       </main>
     )
